@@ -1,0 +1,11 @@
+#!/usr/local/bin/python3
+# import user
+#
+# print(user)
+from gym_requests import GymRequest
+
+req = GymRequest(None)
+resp = req.post_request()
+print(resp)
+# Print response.
+# print(x.text)

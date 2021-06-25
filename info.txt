@@ -1,0 +1,23 @@
+post info
+POST /owa/calendar/AKATimesSquare@korman.onmicrosoft.com/bookings/service.svc/CreateBooking HTTP/1.1
+Host: outlook.office365.com
+Connection: keep-alive
+Content-Length: 823
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36
+Content-Type: application/json; charset=UTF-8
+Accept: */*
+Origin: https://outlook.office365.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en
+Cookie: ClientId=BDBDF0A5C139409995F7539156C73EA8; HostSwitch=1; MSFPC=GUID=48512c9d0c2a4390ad31acaf4a933fa6&HASH=4851&LV=202012&V=4&LU=1607218072600; as=Y2RgYGAEYmYgZjG0MDACAA; OIDC=1; OptInH=XiZMyH4zIANYNpds0c4aEKLSHmR4zgs06DF4XvAa_XA; RoutingKeyCookie=v2:6RRBA9Q0ym6oUZ20V9UY3OEgOV4dUVj7K%2fdYSHcTfGU%3d:3fa20fb4-5db4-4ba8-926d-7c60100b92e4@Knights.ucf.edu; DefaultAnchorMailbox=bambas@Knights.ucf.edu; O365Consumer=0; UC=83e681bf20a94a568785d874516d960c; domainName=Knights.ucf.edu; HostSwitchPrg=1; OutlookSession=707490a3fde34df69b6753c265df005b; X-OWA-CANARY=CwgLQSw_JEeaaLvpfm3tjSCKMxQ9MdkYsx_5NG-pulwfQeJoiaquOzGGAF_mzZPMkitl_rsLNM8.; OWAPF=v:15.20.4264.18&l:mouse
+
+payload
+{"ServiceId":"8C5q1gaOYE2I1uTup8Jg3A2","RequiredSlotCount":1,"AnsweredQuestionList":[{"Question":"Suite No","Id":"b7858409-6dd8-4600-b7a7-d87105275fc8","Required":true,"Answer":"808"},{"Question":"Please complete the COVID-19 symptom screening questions mandated by the New York State Department of Health attached to your appointment confirmation email reminder that will be sent 2 hours prior to your appointment time. ","Id":"63f33fda-4905-4b21-8c6a-eeabe33094be","Required":true,"Options":["I agree","I decline (your booking will be cancelled)"],"SelectedOptions":[0],"Answer":"I agree"}],"Start":"2021-06-26T13:00:00","StaffList":["WhCwT8QaG0CMrDeyfpjM3Q=="],"CustomerName":"Jaime R","CustomerEmail":"alejandrobpetete@hotmail.com","CustomerLocation":"","PrivacyPolicyConsented":true,"TermsAndConditionsConsented":true}
+
+return
+{"Booking":{"ServiceId":"8C5q1gaOYE2I1uTup8Jg3A2","ServiceName":"a.Fitness","Start":"2021-06-26T13:00:00","FormattedDuration":"1 hour","StaffList":[],"AnsweredQuestionList":[{"Answer":"808","Question":"Suite No","Id":"b7858409-6dd8-4600-b7a7-d87105275fc8"},{"Answer":"I agree","Question":"Please complete the COVID-19 symptom screening questions mandated by the New York State Department of Health attached to your appointment confirmation email reminder that will be sent 2 hours prior to your appointment time. ","Options":["I agree","I decline (your booking will be cancelled)"],"SelectedOptions":[0],"Id":"63f33fda-4905-4b21-8c6a-eeabe33094be"}],"CustomerEmail":"alejandrobpetete@hotmail.com","CustomerName":"Jaime R","CustomerLocation":"","Location":"","FormattedPrice":"Free","Id":"C9kdEhNXAEywnAsHqqxD7g2"}}

@@ -1,0 +1,10 @@
+{
+  users: [
+    {
+      "name": "user name",
+      "email": "email@example.com",
+      "room": "1234",
+      "time": "14:00:00"
+    }
+  ],
+}
