@@ -1,10 +1,10 @@
 {
-  users: [
+  "users":[
     {
-      "name": "user name",
+      "name": "John Doe",
       "email": "email@example.com",
       "room": "1234",
-      "time": "14:00:00"
+      "time": "12:00:00"
     }
-  ],
+  ]
 }
