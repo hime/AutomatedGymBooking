@@ -15,7 +15,6 @@ import json
 # See example file to create your own.
 file_info = open('./json/UserInfo.JSON', encoding='utf-8')
 data = json.load(file_info)
-print(data)
 users = []
 json_users = data["users"]
 
@@ -30,5 +29,9 @@ for json_user in json_users:
 
 for user in users:
     req = GymRequest(user)
-    resp = req.post_request()
-    print(resp)
+    while True:
+        resp = req.post_request()
+        print(resp.json())
+        if "Booking" in resp.json():
+            break
+        print("Retrying...")
