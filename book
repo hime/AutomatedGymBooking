@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Jaime Bohorquez
+# Programmed using Atom + iTerm2 on Mac OS Big Sur
+# Filename: book
+
+# This runs permanently to book at every midnight.
+# This is not the most efficient way, but its the most
+# reliable, at least in terms of what I'm running this on.
+
+echo "Started Booking Automator"
+while true;
+do
+    DATE=`date | cut -d' ' -f4`
+    if [[ $DATE == "00:00:00" ]]
+    then
+            echo "Creating booking..."
+            python3 book_users.py
+            echo "Waiting for next timestamp hit..."
+    fi
+    sleep 1
+done

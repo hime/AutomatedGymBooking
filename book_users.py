@@ -1,5 +1,3 @@
-#!/usr/local/bin/python3
-
 # Jaime Bohorquez
 # Programmed using Atom + iTerm2 on Mac OS Big Sur
 # Filename: create_booking
@@ -27,11 +25,16 @@ for json_user in json_users:
         )
     )
 
+attempts = 0
+limit_of_attempts = 30
 for user in users:
     req = GymRequest(user)
-    while True:
+    while attempts < limit_of_attempts:
         resp = req.post_request()
-        print(resp.json())
         if "Booking" in resp.json():
+            print("Booked for", user.name, "at", user.time + ".")
             break
         print("Retrying...")
+        attempts += 1
+    if attempts == limit_of_attempts:
+        print("Failed to book for", user.name, "at", user.time + ".")

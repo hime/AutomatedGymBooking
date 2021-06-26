@@ -6,5 +6,5 @@ Well you see, Facebook corporate housing in NY has a very small gym. Aside from 
 ## Running on Schedule
 We want to start sending requests (until we get a 200 status) at midnight.
 ```sh
-./create booking | at 00:00
+./book
 ```
